@@ -13,6 +13,32 @@ body {
   background-attachment: unset;
 }
 
+/* .pattern {
+  background-image: url(./Assets/background/pattern.png);
+  background-blend-mode: darken;
+  opacity: 0.5;
+  z-index: -100;
+} */
+
+.pattern {
+  position: relative; /* Ensure the element is positioned relatively */
+}
+
+.pattern::before {
+  content: "";
+  position: absolute; /* Position the pseudo-element absolutely */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(./Assets/background/pattern.png);
+
+  background-position: center;
+  background-blend-mode: darken;
+  opacity: 0.2;
+  z-index: -1;
+}
+
 .card-container {
   display: flex;
   justify-content: center;
