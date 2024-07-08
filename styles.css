@@ -13,20 +13,82 @@ body {
   background-attachment: unset;
 }
 
-/* .pattern {
-  background-image: url(./Assets/background/pattern.png);
-  background-blend-mode: darken;
-  opacity: 0.5;
-  z-index: -100;
-} */
+.content {
+  text-align: center;
+  color: white;
+
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.green-text {
+  color: #4caf50;
+}
+
+.button-green {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: rgb(2, 0, 35);
+  border: none;
+  font-family: "Switzer-Bold";
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  margin-top: 20px;
+}
+input[type="email"] {
+  flex-grow: 1;
+  padding: 15px 35px;
+  font-size: 1em;
+  border: none;
+}
+
+.CTA {
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CTA .CTA-BG {
+  height: 704px;
+  width: 1194px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(./Assets/background/BG.png);
+}
+
+.headline-cta {
+  font-family: "Boska-Light";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 110px;
+}
+
+.text-cta {
+  font-family: "Switzer-Regular";
+  font-weight: 400;
+  font-size: 18px;
+}
 
 .pattern {
-  position: relative; /* Ensure the element is positioned relatively */
+  position: relative;
 }
 
 .pattern::before {
   content: "";
-  position: absolute; /* Position the pseudo-element absolutely */
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
